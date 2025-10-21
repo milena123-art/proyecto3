@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con HTML, CSS y JavaScript</title>
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+            transition: background-color 0.5s;
+        }
+
+        h1 {
+            color: #004080;
+        }
+
+        button {
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenido HTML -->
+    <h1>Bienvenido a mi página interactiva</h1>
+    <p>Esta página usa HTML, CSS y JavaScript.</p>
+
+    <button onclick="cambiarColor()">Cambiar color de fondo</button>
+
+    <!-- Script JavaScript -->
+    <script>
+        function cambiarColor() {
+            // Lista de colores posibles
+            const colores = ["#ff9999", "#99ff99", "#9999ff", "#ffff99", "#ffccff", "#c2f0f7"];
+            // Elegir uno al azar
+            const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+            // Aplicarlo al fondo
+            document.body.style.backgroundColor = colorAleatorio;
+        }
+    </script>
+
+</body>
+</html>
